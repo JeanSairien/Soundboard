@@ -1,0 +1,236 @@
+html,
+body {
+    height: 100%
+}
+
+body{
+	background: url('img/background.png');
+	background-attachment: fixed;
+	color: #fff;
+}
+
+a,
+a:focus,
+a:hover {
+    color: #fff
+}
+
+h1 {
+    font-size: 4em;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 0px 0px 10px #000;
+    padding-bottom: 50px;
+    line-height: 1.4em;
+}
+
+audio {
+    display: none
+}
+
+button {
+    border: none;
+    background: none;
+    font-family: inherit;
+    font-size: 0.9em;
+    color: #fff;
+    padding: 20px 5px;
+    display: inline-block;
+    margin: 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    outline: none;
+    position: relative;
+    text-align: center;
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+	overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+button:after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s
+}
+
+.item{
+	padding: 0 10px;
+	box-sizing: border-box;
+}
+
+button:hover {
+	top: 2px;
+}
+
+button:active {
+	top: 6px;
+}
+
+button.btn-bap{
+	background: #fcad26;
+	box-shadow: 0 6px #f0a524;
+}
+
+button:hover.btn-bap{
+	box-shadow: 0 4px #f0a524;
+}
+
+button:active.btn-bap{
+	box-shadow: 0 0 #f0a524;
+}
+
+
+button.btn-mere{
+	background: #9e54bd;
+	box-shadow: 0 6px #823aa0;
+}
+
+button:hover.btn-mere{
+	box-shadow: 0 4px #823aa0;
+}
+
+button:active.btn-mere{
+	box-shadow: 0 0 #823aa0;
+}
+
+
+button.btn-frere{
+	background: #4593e3;
+	box-shadow: 0 6px #226fbe;
+}
+
+button:hover.btn-frere{
+	box-shadow: 0 4px #226fbe;
+}
+
+button:active.btn-frere{
+	box-shadow: 0 0 #226fbe;
+}
+
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #fff
+}
+
+.header-cover-container {
+	display: table;
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    min-height: 100%;
+    background-size: cover;
+    background-image: url('img/baptiste_feu.jpg');
+    background-position: right center;
+
+}
+
+.header-cover-box {
+	display: table-cell;
+    vertical-align: middle;
+    background: rgba(0,0,0,0.5);
+}
+
+.header-cover-inner {
+    text-align: center;
+    margin: auto;
+    max-width: 700px;
+    width: 100%;
+    padding: 30px 0;
+}
+
+.header-cover-inner p {
+    font-size: 1.4em
+}
+
+.header-cover-inner .btn {
+    margin: 3em 20px;
+    font-weight: bold
+}
+
+#baptiste {
+	padding: 10px;
+	margin-left: 30%;
+	margin-bottom: 5px;
+	width: 70%;
+    text-align: center;
+}
+
+#credit{
+	font-size: 10px;
+	font-weight: 100;
+	position: fixed;
+	color: #EEE;
+	width: 30%;
+	text-align: center;
+	bottom: 0px;
+	left: 0px;
+	font-family: arial;
+}
+
+#credit p{
+	margin: 10px;
+}
+
+@media (max-width : 991px){
+	
+	.header-cover-container {
+		min-height: auto;
+		background-position: center -200px;
+		position: relative;
+		width: 100%;
+		height: 300px;
+	}
+
+	#baptiste{
+		width: 100%;
+		margin-left: 0px;
+	}
+	
+	#credit{
+		position: relative;
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+@media (max-width : 480px){
+	.header-cover-container {
+		min-height: auto;
+		background-position: center -100px;
+	}
+		
+	button {
+		font-size: 0.8em;
+		padding: 15px 0px;
+		margin: 10px 0px;
+	}
+	
+	.item{
+		padding: 0 5px;
+	}
+	
+	#baptiste {
+		padding: 5px;
+	}
+}
+
+@media (max-width : 300px){
+	.header-cover-container {
+		background-position: center center;
+	}
+	.item{
+		width: 100%;
+	}
+}
